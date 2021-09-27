@@ -4,6 +4,6 @@
 // xs_end
 
 float map(vec3 v) {
-	bvec a = bvec(false);
+	bvec3 a = bvec3(false);
 	return float(a.x);
 }
