@@ -1,0 +1,19 @@
+// xs_begin
+// author : '@lachlanmcdonald'
+// arg : { name = 'Working'  range = '0 1'  value = '1'  step = '1'  precision = '0' }
+// xs_end
+
+struct Box {
+	float lower;
+	float upper;
+};
+
+Box test(float f) {
+	Box b = Box(f, f);
+	return b;
+}
+
+float map(vec3 v) {
+	Box b = test(1.0);
+	return b.upper;
+}

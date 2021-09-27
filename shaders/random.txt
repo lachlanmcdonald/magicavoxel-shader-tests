@@ -1,0 +1,12 @@
+// xs_begin
+// author : '@lachlanmcdonald'
+// arg : { name = 'Working'  range = '0 1'  value = '1'  step = '1'  precision = '0' }
+// xs_end
+
+float random(vec2 co) {
+	return fract(cos(dot(co.xy, vec2(23.14069266477926, pow(sqrt(2.0), 2.0)))) * 43758.6980280632);
+}
+
+float map(vec3 v) {
+	return random(v.xy);
+}

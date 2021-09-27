@@ -1,0 +1,13 @@
+// xs_begin
+// author : '@lachlanmcdonald'
+// arg : { name = 'Working'  range = '0 1'  value = '1'  step = '1'  precision = '0' }
+// xs_end
+
+float pal(float p) {
+	float f = floor(mix(0.0, float(i_num_color_sels), p));
+	return color_sel(f);
+}
+
+float map(vec3 v) {
+	return pal(1.0);
+}

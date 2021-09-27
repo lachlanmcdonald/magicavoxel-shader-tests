@@ -1,0 +1,11 @@
+// xs_begin
+// author : '@lachlanmcdonald'
+// arg : { name = 'Working' var="m_working" range = '0 1'  value = '1'  step = '1'  precision = '0' }
+// xs_end
+
+int a = int(m_working);
+float b = m_working / 100.0;
+
+float map(vec3 v) {
+	return b;
+}

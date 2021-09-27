@@ -1,0 +1,11 @@
+// xs_begin
+// author : '@lachlanmcdonald'
+// arg : { name = 'Working'  range = '0 1'  value = '1'  step = '1'  precision = '0' }
+// xs_end
+
+bool no_axis_mode = all(equal(ivec3(i_axis), ivec3(0)));
+bvec3 axis_mode = no_axis_mode ? bvec3(true) : equal(ivec3(i_axis), ivec3(1));
+
+float map(vec3 v) {
+	return 1.0;
+}

@@ -1,0 +1,18 @@
+// xs_begin
+// author : '@lachlanmcdonald'
+// arg : { name = 'Working'  range = '0 1'  value = '1'  step = '1'  precision = '0' }
+// xs_end
+
+bool isSelectedPal(float p) {
+	for (int i = 0; i < i_num_color_sels; i += 1) {
+		if (p == color_sel(float(i))) {
+			return true;
+		}
+	}
+	return false;
+}
+
+float map(vec3 v) {
+	float i = voxel(v);
+	return isSelectedPal(i) ? 1.0 : 0.0;
+}
